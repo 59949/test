@@ -1,10 +1,5 @@
 package com.jingbeifang.fruit.model;
 
-import com.jingbeifang.fruit.test.Apple;
-import com.jingbeifang.fruit.test.Fruit;
-import com.jingbeifang.fruit.test.Mango;
-import com.jingbeifang.fruit.test.Strawberry;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -16,7 +11,7 @@ import java.util.Map;
  */
 public class FruitData {
 
-    // 模拟数据库中超市存在的水果
+    // 模拟数据库 超市库存存在的水果
     private static Map<Integer, Fruit> fruitMap = new HashMap<>();
 
     static {
@@ -25,6 +20,10 @@ public class FruitData {
         fruitMap.put(10012, new Mango());
     }
 
+    /**
+     *  提供方法给超市获取水果
+     * @return
+     */
     public static Map<Integer, Fruit> getFruitMap() {
         return fruitMap;
     }
